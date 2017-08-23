@@ -1,11 +1,11 @@
-杜亮的个人简历
+﻿杜亮的个人简历
 
 求职意向：Web前端
 
 年龄：26岁              
 籍贯：四川资阳
 电话：189-0835-4503  
-邮箱：137634560@qq.com
+邮箱：duliang0823@foxmail.com
 GitHub:https://duliang823.github.io/
 
 教育背景：
