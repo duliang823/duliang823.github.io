@@ -1,722 +1,236 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1">
-<title>简历-杜亮-18908354503</title>
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-<link href="css/style.css" rel="stylesheet" type="text/css"> 
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
-<link href="css/animate.css" rel="stylesheet" type="text/css">
- 
-<!--[if lt IE 9]>
-    <script src="js/respond-1.1.0.min.js"></script>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/html5element.js"></script>
-<![endif]-->
- 
+  <meta charset="UTF-8">
+  <title>杜亮的个人主页</title>
+
+  <style>
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+</style>
+
+    <style>
+body {
+  background: #fff4e0;
+}
+
+.slide {
+  background: #fff4e0;
+  position: relative;
+}
+.slide .stage {
+  position: relative;
+  height: 400px;
+  background: #c5e0dc;
+}
+.slide .stage .landscape {
+  background: url("landscape.png") no-repeat center top;
+  background-size: cover;
+  height: 248px;
+  position: absolute;
+  top: 185px;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+.slide .stage .behind-trees {
+  background: url("behind-trees.png") no-repeat center top;
+  height: 103px;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.slide .stage .behind-mountains {
+  background: url("behind-mountains.png") no-repeat center top;
+  height: 103px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.slide .stage .foreground-trees {
+  background: url("foreground-trees.png") no-repeat center top;
+  height: 264px;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+.kai {
+  height: 257px;
+  position: absolute;
+  width: 180px;
+  left: 50%;
+  margin-left: -90px;
+  top: 110px;
+  z-index: 3;
+  transform: scale(0);
+  background: url("kai_running.png");
+}
+.kai .eyes:after, .kai .eyes:before {
+  height: 8px;
+  width: 5px;
+  background: #1a181b;
+  top: 100px;
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+}
+.kai .eyes:after {
+  right: 70px;
+}
+.kai .eyes:before {
+  left: 70px;
+}
+.kai.animate {
+  animation: animate 0.75s steps(19) infinite;
+}
+.kai.animate .eyes {
+  position: relative;
+  animation: eyes_running .75s reverse infinite;
+}
+.kai.animate .eyes:before, .kai.animate .eyes:after {
+  animation: eyes_blink 5s .2s alternate infinite linear;
+}
+
+@keyframes animate {
+  to {
+    background-position: -3420px;
+  }
+}
+@keyframes eyes_blink {
+  0% {
+    height: 8px;
+    top: 100px;
+  }
+
+  10% {
+    height: 8px;
+    top: 100px;
+  }
+
+  11% {
+    height: 2px;
+    top: 103px;
+  }
+
+  13% {
+    height: 2px;
+    top: 103px;
+  }
+
+  14% {
+    height: 8px;
+    top: 100px;
+  }
+
+  30% {
+    height: 8px;
+    top: 100px;
+  }
+
+  34% {
+    height: 8px;
+    top: 100px;
+  }
+
+  36% {
+    height: 2px;
+    top: 103px;
+  }
+
+  38% {
+    height: 8px;
+    top: 100px;
+  }
+
+  40% {
+    height: 2px;
+    top: 103px;
+  }
+
+  42% {
+    height: 8px;
+    top: 100px;
+  }
+
+  99.9999% {
+    height: 8px;
+    top: 100px;
+  }
+}
+@keyframes eyes_running {
+  0% {
+    top: 20px;
+  }
+
+  22% {
+    top: 9px;
+  }
+
+  46% {
+    top: 17px;
+  }
+
+  72% {
+    top: 9px;
+  }
+
+  100% {
+    top: 20px;
+  }
+}
+</style>
+
+    <script src="js/prefixfree.min.js"></script>
+
 </head>
+
 <body>
-
-<!--Hero_Section-->
-<section id="hero_section" class="top_cont_outer">
-  <div class="hero_wrapper">
-	<div class="card hovercard">
-	  <div class="cardheader">
-	  </div>
-	  <div class="avatar" >
-		  <img alt="" style="width:100%;position:relative; left: 5.6px;" src="img/photoDuliang.jpg">
-	  </div>
-	  <div class="info">
-		  <div class="row">
-			  <div class="col-md-12 title">
-				  <p><strong>杜亮</strong></p>
-			  </div>
-			  <div class="col-md-12 desc" style="color: white;">
-				  <p><strong>求职意向：Java Web软件开发</strong></p>
-				  <br>
-			  </div>
-			  <div class="col-md-12">
-				  <div class="col-md-3">
-				  </div>
-				  <div class="col-md-6">
-					<div class="desc col-md-12">
-						<div class="col-md-6 text-left" style="color: white;">
-							<p>年龄：26</p>
-							<p>电话：189-0835-4503</p>
-						</div>
-						<div class="col-md-6 text-left" style="color: white;">
-							<p>籍贯：四川资阳</p>
-							<p>邮箱：duliang0823@foxmail.com</p>
-						</div>
-					</div>
-				  </div>
-				  <div class="col-md-3">
-				  </div>
-			  </div>
-		  </div>
-	  </div>
-  </div>
-  </div>
-</section>
-<!--Hero_Section--> 
-
-<!--Header_section-->
-<header id="header_wrapper">
-  <div class="container">
-    <div class="header_box">
-	  <nav class="navbar navbar-inverse" role="navigation">
-      <div class="navbar-header">
-        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        </div>
-	    <div id="main-nav" class="collapse navbar-collapse navStyle">
-			<ul class="nav navbar-nav" id="mainNav">
-			  <li class="active"><a href="#hero_section" class="scroll-link">主页</a></li>
-			  <li><a href="#aboutUs" class="scroll-link">个人资料</a></li>
-			  <li><a href="#service" class="scroll-link">职场技能</a></li>
-			  <li><a href="#experience" class="scroll-link">项目经历</a></li>
-			  <li><a href="#Portfolio" class="scroll-link">作品积累</a></li>
-			  <li><a href="#team" class="scroll-link">荣誉奖项</a></li>
-			  <li><a href="#contact" class="scroll-link">简历下载</a></li>
-			</ul>
-      </div>
-	 </nav>
-    </div>
-  </div>
-</header>
-<!--Header_section--> 
-
-<section id="aboutUs"><!--Aboutus-->
-<div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
-  <div class="container">
-    <h2>个人资料</h2>
-    <div class="inner_section">
-	  <div class="row">
-		<div class="col-lg-12 about-us">
-			<div class="panel panel-primary">
-				<div class="panel-heading"><h3>教育背景</h3></div>
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="col-md-6">
-								<p class="points"><b>毕业院校：重庆邮电大学</b></p>
-								<p class="points"><b>学&nbsp;&nbsp;历：硕士研究生</b></p>
-								<p class="points"><b>研究方向：物联网•智能家居</b></p>
-								<p class="points">专&nbsp;&nbsp;业：自动化•控制科学与工程</p>
-
-							</div>
-							<div class="col-md-6">
-								<p class="points">毕业时间：2018.07.01</p>
-								<p class="points">研究生成绩：前10%</p>
-								<p class="points">本科院校：成都理工大学工程技术学院</p>
-								<p class="points">本科成绩：前3名</p>
-							</div>
-							<div class="col-md-12 ">
-								<p><b>计算机等级</b>：全国计算机二级</p>
-								<p><b>研究成果</b>：申请发明专利1项：《一种基于SOA的智慧社区管理系统》&nbsp;&nbsp;专利号：201710234451.5</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel panel-info">
-				<div class="panel-heading"><h4>自我评价</h4></div>
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="col-md-6">
-								<p>性格热情开朗，待人友好，为人真诚谦虚；</p>
-								<p>能吃苦耐劳，尽职尽责，有耐心；</p>
-							</div>
-							<div class="col-md-6">
-								<p>有良好的沟通能力，注重团队合作，理解能力较强；</p>
-								<p>有较强的自学能力，乐于学习新技术；</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="panel panel-success">
-				<div class="panel-heading"><h4>兴趣爱好</h4></div>
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-md-12">
-							<div class="col-md-6">
-								<p><img style="width: 5%;" src="img/icon-tennis.png">&nbsp;羽毛球</p>
-								<p><img style="width: 5%;" src="img/icon-music.png">&nbsp;音乐</p>
-							</div>
-							<div class="col-md-6">
-								<p><img style="width: 5%;" src="img/icon-camera.png">&nbsp;摄影</p>
-								<p><img style="width: 5%;" src="img/icon-running.png">&nbsp;跑步</p>
-							</div>
-							<div class="col-md-12 ">
-								<p>2017年5月20日参加重庆市首届大学生“爱母校，爱运动”校园跑;&nbsp;参赛号码：A082310</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div><!-- /.col-lg-12 -->
-	  </div>
-    </div>
-  </div> 
-  </div>
-</section>
-<!--Aboutus--> 
-
-
-<!--Service-->
-<section  id="service">
-  <div class="container">
-    <h2>职场技能</h2>
-    <div class="service_wrapper">
-      <div class="row">
-	    <div class="col-md-12"><h3>前端语言:</h3></div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 55%;" src="img/icon-html5.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">HTML</h3>
-            <p class="animated fadeInDown wow">
-				熟悉使用HTML语言进行网页编程
-			</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 55%;" src="img/icon-css3.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">CSS</h3>
-            <p class="animated fadeInDown wow">
-				熟悉使用CSS语言进行网页布局
-			</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 55%;" src="img/icon-javascript.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">JavaScript</h3>
-            <p class="animated fadeInDown wow">
-				熟悉使用JavaScript添加动态功能
-			</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 95%;" src="img/icon-ajax.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">Ajax</h3>
-            <p class="animated fadeInDown wow">
-				熟悉使用Ajax语言进行数据交互
-			</p>
-          </div>
-        </div>
-
-	    <div class="col-md-12"><h3>编程框架:</h3></div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 55%;" src="img/icon-jquery.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">jQuery</h3>
-            <p class="animated fadeInDown wow">
-				了解jQuery的基本使用
-			</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 55%;" src="img/icon-AngularJS.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">AngularJS</h3>
-            <p class="animated fadeInDown wow">
-				了解AngularJS的基本编程
-			</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 55%;" src="img/icon-Bootstrap.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">Bootstrap</h3>
-            <p class="animated fadeInDown wow">
-				熟悉使用Bootstrap进行网页布局
-			</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 55%;" src="img/icon-NodeJs.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">Node.js</h3>
-            <p class="animated fadeInDown wow">
-				熟悉使用Node.js进行服务器搭建
-			</p>
-          </div>
-        </div>
-
-	    <div class="col-md-12"><h3>Java后台:</h3></div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 80%;" src="img/icon-java.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">Java</h3>
-            <p class="animated fadeInDown wow">
-				熟悉使用Spring，SpringMVC，MyBatis等框架进行搭建Java后台
-			</p>
-          </div>
-        </div>
-
-	    <div class="col-md-12"><h3>数据库:</h3></div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 85%;" src="img/icon-MySQL.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">MySQL</h3>
-            <p class="animated fadeInDown wow">
-				熟练掌握MySQL数据库的基本使用
-			</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 55%;" src="img/icon-MongoDB.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">MongoDB</h3>
-            <p class="animated fadeInDown wow">
-				熟悉MongoDB数据库的基本使用
-			</p>
-          </div>
-        </div>
-
-	    <div class="col-md-12"><h3>工具:</h3></div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 55%;" src="img/icon-WebStorm.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">WebStorm</h3>
-            <p class="animated fadeInDown wow">
-				熟悉使用WebStorm进行Web前端开发
-			</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 70%;" src="img/icon-myeclipse.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">MyEclipse</h3>
-            <p class="animated fadeInDown wow">
-				熟悉使用MyEclipse进行Java后端开发
-			</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-		  <div class="service_icon delay-03s animated wow  zoomIn">
-			  <span><i><img style="width: 55%;" src="img/icon-Photoshop.png"></i></span>
-		  </div>
-          <div class="service_block">
-            <h3 class="animated fadeInUp wow">Photoshop</h3>
-            <p class="animated fadeInDown wow">
-				熟悉使用Photoshop进行修图
-			</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-<!--Service-->
-
-
- 
-
-<section id="experience" class="timeline">
-<div class="container">
-    <h2>项目经历</h2>
-	<h3>校内项目</h3>
-    <div class="qa-message-list" id="wallmessages">
-		<div class="message-item" id="m16">
-			<div class="message-inner">
-				<div class="message-head clearfix">
-					<div class="user-detail">
-						<h5 class="handle">2016.03.01-2016.11.30&nbsp;&nbsp;“基于物联网的楼宇联合研发及应用”国家国际科技合作专项</h5>			
-					</div>
-				</div>
-				<div class="qa-message-content">
-					<p>
-						<b>项目描述：</b>实现家电控制，环境监测，综合安防的智能家居管理系统。
-					</p>
-					<p>
-						<b>主要负责：</b>独立搭建智能家居的Java Web服务器，后端采用SSM框架，使用Java实现UDP协议从网关获取10多个传感器数据，对数据进行解析存入到MySQL数据库中，使用Java将前端控制数据封装后通过UDP发送到网关；前端采用AngularJS框架，使用Bootstrap进行页面布局。
-					</p>
-					<p>
-						<b>项目业绩：</b>完成智能家居的Web管理系统应用，实现家电控制，环境监测，综合安防功能，项目为组上发表专著1本：《智能家居技术》。
-					</p>
-				</div>
-		</div></div>
-
-		<div class="message-item" id="m9">
-			<div class="message-inner">
-				<div class="message-head clearfix">
-					<div class="user-detail">
-						<h5 class="handle">2015.09.01-2015.12.31&nbsp;&nbsp;“面向工业无线网络设备研发及应用”中的示范应用项目--国家重大专项</h5>			
-					</div>
-				</div>
-				<div class="qa-message-content">
-					<p>
-						<b>项目描述：</b>在都江堰双合水电厂搭建服务器，实现节点数据采集和视频监控等功能。
-					</p>
-					<p>
-						<b>主要负责：</b>搭建了“水电厂无人值守系统”的Java服务器：从网关获取50多个传感器数据，使用Java进行数据解析，把数据存储在MySQL数据库中。前端使用AngularJS框架，从Java服务器获取数据库的数据，实现在HTML页面显示实时的传感器数据。掌握了Web项目开发的流程。
-					</p>
-					<p>
-						<b>项目业绩：</b>软件登记1项：《基于B/S架构的智能水电厂无人值守系统软件》，实现了都江堰双合水电厂的中控室、厂房、高压开关室、库房、取水口和前池坝体的实时监控。
-					</p>
-				</div>
-		</div></div>
-	</div>
-	<br>
-	<h3>校外实习</h3>
-    <div class="qa-message-list" >
-		<div class="message-item" >
-			<div class="message-inner">
-				<div class="message-head clearfix">
-					<div class="user-detail">
-						<h5 class="handle">2016.11.18-2017.01.21&nbsp;&nbsp;博康智能网络科技股份有限公司</h5>
-						
-					</div>
-				</div>
-				<div class="qa-message-content">
-					<p>
-						<b>部门：</b>软件开发
-					</p>
-					<p>
-						<b>职位：</b>Java软件开发实习生
-					</p>
-					<p>
-						<b>项目描述：</b>协助包头市公安局搭建道路视频综合管理Web应用，实现视频监控，车牌号查询，定位追踪等功能。
-					</p>
-					<p>
-						<b>主要职责：</b>每天工作时间：9:30-22:30，使用MyBatis将100多个摄像头的信息录入到Oracle数据库中，使用Java POI将数据库信息生成Excel报表；使用jQuery EasyUI，Bootstrap框架完成用户网页的布局；主动利用Photoshop技术修改了20多张前端界面图。
-					</p>
-					<p>
-						<b>实习业绩：</b>完成了摄像头信息录入，用户信息管理，信息搜索，权限管理，用户收藏等功能。学会了怎么和他人合作开发Web项目，了解了公司开发Web项目的流程。
-					</p>				
-				</div>
-		</div></div>
-	</div>
+  <div class='kai animate' id='running'>
+  <div class='eyes'></div>
 </div>
-</section>
-		  
- <!-- Portfolio -->
-<section id="Portfolio" class="content">
-	<!-- Container -->
-	<div class="container portfolio_title">
-
-		<!-- Title -->
-		<div class="section-title">
-			<h2>作品积累</h2>
-		</div>
-		<!--/Title -->
-
-	</div>
-	<!-- Container -->
-
-	<div class="portfolio-top"></div>
-
-	<!-- Portfolio Filters -->
-	<div class="portfolio">
-
-		<div id="filters" class="sixteen columns">
-			<ul class="clearfix">
-				<li><a id="all" href="#" data-filter="*" class="active">
-					<h5>全部</h5>
-				</a></li>
-				<li><a class="" href="#" data-filter=".codeLab">
-					<h5>实验室</h5>
-				</a></li>
-				<li><a class="" href="#" data-filter=".codePersonage">
-					<h5>个人</h5>
-				</a></li>
-				<li><a class="" href="#" data-filter=".codeGraduation">
-					<h5>毕业设计</h5>
-				</a></li>
-				<li><a class="" href="#" data-filter=".codeMatch">
-					<h5>比赛</h5>
-				</a></li>
-			</ul>
-		</div>
-		<!--/Portfolio Filters -->
-
-		<!-- Portfolio Wrapper -->
-		<div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">
-			<!-- Portfolio Item -->
-			<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   codeLab isotope-item effect-oscar">
-
-				<div class="portfolio_img">
-					<img src="img/projects/smarthome.jpg"   alt="Portfolio 1"> </div>
-				<figcaption>
-					<div>
-						<a href="img/projects/smarthome.jpg" class="fancybox">
-							<h2><span>智能家居</span></h2>
-							<p>重庆邮电大学智能家居Web系统</p>
-							<p><a href="https://github.com/duliang823/ZH3" target="_blank">作品链接</a></p>
-						</a>
-					</div>
-				</figcaption>
-			</figure>
-			<!--/Portfolio Item -->
-
-			<!-- Portfolio Item-->
-			<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  codeLab isotope-item effect-oscar">
-				<div class="portfolio_img"> <img src="img/projects/hydraulicPowerPlant.jpg" alt="Portfolio 1"> </div>
-				<figcaption>
-					<div>
-						<a href="img/projects/hydraulicPowerPlant.jpg" class="fancybox">
-							<h2><span>水电厂监控</span></h2>
-							<p>都江堰双合教学科研电厂无人值守系统</p>
-							<p><a href="https://github.com/duliang823/HP" target="_blank">作品链接</a></p>
-						</a>
-					</div>
-				</figcaption>
-			</figure>
-			<!--/Portfolio Item -->
-
-			<!-- Portfolio Item -->
-			<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  codePersonage  isotope-item effect-oscar">
-				<div class="portfolio_img"> <img src="img/projects/littleAlbum.jpg" alt="Portfolio 1"> </div>
-				<figcaption>
-					<div>
-						<a href="img/projects/littleAlbum.jpg" class="fancybox">
-							<h2><span>小相册</span></h2>
-							<p>Node.js本地相册</p>
-							<p><a href="https://github.com/duliang823/littleAlbum" target="_blank">作品链接</a></p>
-						</a>
-					</div>
-				</figcaption>
-			</figure>
-			<!--/Portfolio Item-->
-
-			<!-- Portfolio Item-->
-			<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  codePersonage  prototype web isotope-item effect-oscar">
-				<div class="portfolio_img"> <img src="img/projects/messageBook.jpg" alt="Portfolio 1"> </div>
-				<figcaption>
-					<div>
-						<a href="img/projects/messageBook.jpg" class="fancybox">
-							<h2><span>留言本</span></h2>
-							<p>采用了MongoDB数据库的留言本</p>
-							<p><a href="https://github.com/duliang823/messageBook" target="_blank">作品链接</a></p>
-						</a>
-					</div>
-				</figcaption>
-			</figure>
-			<!-- Portfolio Item -->
-
-			<!-- Portfolio Item -->
-			<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  codeLab isotope-item effect-oscar">
-				<div class="portfolio_img"> <img src="img/projects/smartHomeBox.jpg" alt="Portfolio 1"> </div>
-				<figcaption>
-					<div>
-						<a href="img/projects/smartHomeBox.jpg" class="fancybox">
-							<h2><span>IOT箱子</span></h2>
-							<p>实验室IOT箱子Web控制系统</p>
-							<p><a href="https://github.com/duliang823/SmartHomeBox" target="_blank">作品链接</a></p>
-						</a>
-					</div>
-				</figcaption>
-			</figure>
-			<!--/Portfolio Item -->
-
-			<!-- Portfolio Item -->
-			<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  codePersonage isotope-item effect-oscar">
-				<div class="portfolio_img"> <img src="img/projects/xiaoneiwang.jpg" alt="Portfolio 1"> </div>
-				<figcaption>
-					<div>
-						<a href="img/projects/xiaoneiwang.jpg" class="fancybox">
-							<h2><span>校内网</span></h2>
-							<p>采用SSH框架实现的校园内部网页</p>
-							<p><a href="https://github.com/duliang823/xiaoneiwang" target="_blank">作品链接</a></p>
-						</a>
-					</div>
-				</figcaption>
-			</figure>
-			<!--/Portfolio Item -->
-
-			<!-- Portfolio Item  -->
-			<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  codeGraduation codeLab isotope-item effect-oscar">
-				<div class="portfolio_img"> <img src="img/projects/icms.jpg" alt="Portfolio 1"> </div>
-				<figcaption>
-					<div>
-						<a href="img/projects/icms.jpg" class="fancybox">
-							<h2><span>智慧社区</span></h2>
-							<p>研究生毕业设计-智慧社区管理系统</p>
-							<p><a href="https://github.com/duliang823/icms" target="_blank">作品链接</a></p>
-						</a>
-					</div>
-				</figcaption>
-			</figure>
-			<!--/Portfolio Item -->
-
-			<!-- Portfolio Item -->
-			<figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   codeMatch isotope-item effect-oscar">
-				<div class="portfolio_img"> <img src="img/projects/codecraftHuawei.jpg" alt="Portfolio 1"> </div>
-				<figcaption>
-					<div>
-						<a href="img/projects/codecraftHuawei.jpg" class="fancybox">
-							<h2><span>华为软挑赛</span></h2>
-							<p>2017年参加华为软件精英挑战赛代码</p>
-							<p><a href="https://github.com/duliang823/codecraftHuawei" target="_blank">作品链接</a></p>
-						</a>
-					</div>
-				</figcaption>
-			</figure>
-			<!--/Portfolio Item -->
-
-		</div>
-		<!--/Portfolio Wrapper -->
-
-	</div>
-	<!--/Portfolio Filters -->
-
-
-
-</section>
-<!--/Portfolio --> 
-
-
-<section class="page_section team" id="team"><!--main-section team-start-->
-	<h2>荣誉奖项</h2>
-	<div class="container" id="jssor_1" style="position: relative; margin: 0 auto; top: 20px; left: 0px; width: 960px; height: 480px; overflow: hidden; visibility: hidden; background-color: #24262e;">
-		<!-- Loading Screen -->
-		<div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-			<div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-			<div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-		</div>
-		<div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 240px; width: 720px; height: 480px; overflow: hidden;">
-			<div data-p="150.00">
-				<img data-u="image" src="img/awards/freescale-secondPrize.jpg" />
-				<img data-u="thumb" src="img/awards/freescale-secondPrize.jpg" />
-			</div>
-			<div data-p="150.00" style="display: none;">
-				<img data-u="image" src="img/awards/smart carRacethirdPrize.jpg" />
-				<img data-u="thumb" src="img/awards/smart carRacethirdPrize.jpg" />
-			</div>
-			<div data-p="150.00" style="display: none;">
-				<img data-u="image" src="img/awards/NCRE2.jpg" />
-				<img data-u="thumb" src="img/awards/NCRE2.jpg" />
-			</div>
-			<div data-p="150.00" style="display: none;">
-				<img data-u="image" src="img/awards/nationalEndeavorScholarship.jpg" />
-				<img data-u="thumb" src="img/awards/nationalEndeavorScholarship.jpg" />
-			</div>
-			<div data-p="150.00" style="display: none;">
-				<img data-u="image" src="img/awards/scholarship1.jpg" />
-				<img data-u="thumb" src="img/awards/scholarship1.jpg" />
-			</div>
-			<div data-p="150.00" style="display: none;">
-				<img data-u="image" src="img/awards/scholarship3.jpg" />
-				<img data-u="thumb" src="img/awards/scholarship3.jpg" />
-			</div>
-			<div data-p="150.00" style="display: none;">
-				<img data-u="image" src="img/awards/excellentStudent.jpg" />
-				<img data-u="thumb" src="img/awards/excellentStudent.jpg" />
-			</div>
-			<div data-p="150.00" style="display: none;">
-				<img data-u="image" src="img/awards/technologicalInnovation1.jpg" />
-				<img data-u="thumb" src="img/awards/technologicalInnovation1.jpg" />
-			</div>
-			<div data-p="150.00" style="display: none;">
-				<img data-u="image" src="img/awards/technologicalInnovation2.jpg" />
-				<img data-u="thumb" src="img/awards/technologicalInnovation2.jpg" />
-			</div>
-			<div data-p="150.00" style="display: none;">
-				<img data-u="image" src="img/awards/technologicalInnovation3.jpg" />
-				<img data-u="thumb" src="img/awards/technologicalInnovation3.jpg" />
-			</div>
-			<div data-p="150.00" style="display: none;">
-				<img data-u="image" src="img/awards/abilityCertify.jpg" />
-				<img data-u="thumb" src="img/awards/abilityCertify.jpg" />
-			</div>
-			<div data-p="150.00" style="display: none;">
-				<img data-u="image" src="img/awards/mandarinCertificate.jpg" />
-				<img data-u="thumb" src="img/awards/mandarinCertificate.jpg" />
-			</div>
-
-			<a data-u="any" href="#" style="display:none">Image Gallery with Vertical Thumbnail</a>
-		</div>
-		<!-- Thumbnail Navigator -->
-		<div data-u="thumbnavigator" class="jssort01-99-66" style="position:absolute;left:0px;top:0px;width:240px;height:480px;" data-autocenter="2">
-			<!-- Thumbnail Item Skin Begin -->
-			<div data-u="slides" style="cursor: default;">
-				<div data-u="prototype" class="p">
-					<div class="w">
-						<div data-u="thumbnailtemplate" class="t"></div>
-					</div>
-					<div class="c"></div>
-				</div>
-			</div>
-			<!-- Thumbnail Item Skin End -->
-		</div>
-		<!-- Arrow Navigator -->
-		<span data-u="arrowleft" class="jssora05l" style="top:0px;left:248px;width:40px;height:40px;" data-autocenter="2"></span>
-		<span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
-	</div>
-</section>
-<!--/Team-->
-<!--Footer-->
-<footer class="footer_wrapper" id="contact">
-  <div class="container">
-    <section class="page_section contact" >
-      <div class="contact_section">
-        <h2>简历下载</h2>
-	    <div class="row">
-			<div class="col-md-6 text-center">
-				<a class="btn btn-success" href="files/resume/简历+杜亮+JavaWeb工程师+18908354503.pdf" target="_blank" role="button">PDF版简历</a>
-			</div>
-			<div class="col-md-6 text-center">
-				<a class="btn btn-success" href="files/resume/简历+杜亮+JavaWeb工程师+18908354503.doc" target="_blank" role="button">Word版简历</a>
-			</div>
-	    </div>
-      </div>
-    </section>
+<div class='slide'>
+  <div class='stage'>
+    <div class='foreground-trees'></div>
+    <div class='landscape'></div>
+    <div class='behind-trees'></div>
+    <div class='behind-mountains'></div>
   </div>
-  <div class="container">
-    <div class="footer_bottom text-center" style="color: white;">
-		<p>等待您的回复</p>
-		<p>电话：189-0835-4503</p>
-		<p>邮箱：duliang0823@foxmail.com</p>
-	</div>
-  </div>
-</footer>
+</div>
 
-<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-<script type="text/javascript" src="js/jquery.nav.js"></script> 
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="js/jquery.isotope.js"></script>
-<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script> 
-<script type="text/javascript" src="js/wow.js"></script> 
-<script type="text/javascript" src="js/custom.js"></script>
-<script type="text/javascript" src="js/jssor.slider-21.1.6.mini.js"></script>
-<script type="text/javascript" src="js/myjs.js"></script>
+
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <script src='js/jquery-1.11.0.min.js'></script>
+  <script src='js/jquery.transform.js'></script>
+  <script src="js/index.js"></script>
+<div style="text-align:center;clear:both;margin-top:100px">
+</div>
+
+  <div class="row ">
+    <div class="col-xs-12 text-center">
+       <h1>欢迎进入杜亮的个人主页</h1>
+       <br>
+       <a class="btn btn-primary" href="./resumeDuLiang.html"><h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;杜亮的简历&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3></a>
+       <br>
+       <br>
+       <a class="btn btn-primary" href="http://duliang.imwork.net/icms"><h3>智慧社区管理平台项目</h3></a>
+      <br>
+      <br>
+       <h4>
+          <b>说明：</b>
+          由于使用的实验室服务器，可能会因为电脑关闭导致&nbsp;智慧社区管理平台项目&nbsp;不能进入，敬请谅解！
+       </h4>
+    </div>
+  </div>
 
 </body>
+
 </html>
